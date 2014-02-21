@@ -1,0 +1,545 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>   
+      <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- TODO: Add title back here. -->
+    <meta name="description" content="">
+    <link rel="alternate" type="application/rss+xml" title="Winona State University News Feed" href="http://winonastatenews.com/feed/">
+
+    <!-- Commented out for now, paths to png when we have those from Todd.
+    <link rel="apple-touch-icon" href="apple-touch-icon-152x152-precomposed.png">
+    <link rel="icon" href="path/to/favicon.png">
+    -->
+    <!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
+
+    <meta name="application-name" content="Winona State University">
+    <meta name="msapplication-TileColor" content="#401587">
+    <meta name="msapplication-square70x70logo" content="ie/tiny.png">
+    <meta name="msapplication-square150x150logo" content="ie/square.png">
+    <meta name="msapplication-wide310x150logo" content="ie/wide.png">
+    <meta name="msapplication-square310x310logo" content="ie/large.png">
+    <meta name="msapplication-notification" content="frequency=60;polling-uri=http://notifications.buildmypinnedsite.com/?feed=http://winonastatenews.com/feed/&amp;id=1;polling-uri2=http://notifications.buildmypinnedsite.com/?feed=http://winonastatenews.com/feed/&amp;id=2;polling-uri3=http://notifications.buildmypinnedsite.com/?feed=http://winonastatenews.com/feed/&amp;id=3;polling-uri4=http://notifications.buildmypinnedsite.com/?feed=http://winonastatenews.com/feed/&amp;id=4;polling-uri5=http://notifications.buildmypinnedsite.com/?feed=http://winonastatenews.com/feed/&amp;id=5; cycle=1">
+
+    <link href="http://xwebdev.winona.edu/webteam/zach/wsu.mainweb.templates/css/bootstrap.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!-- <link href="http://xwebdev.winona.edu/webteam/zach/wsu.mainweb.templates/css/offcanvas.css" rel="stylesheet"> -->
+    <link href="http://xwebdev.winona.edu/webteam/zach/wsu.mainweb.templates/css/wsustyles.css" rel="stylesheet">
+     <link data-turbolinks-track="true" href="../assets/application.css" media="all" rel="stylesheet" />
+
+    <script type="text/javascript" src="http://www.winona.edu/Scripts/jquery-1.7.1.min.js"></script>
+   <script type="text/javascript" src="http://www.winona.edu/Scripts/jquery-1.3.2.min.js"></script>
+<!--     <script type="text/javascript" src="http://www.winona.edu/Scripts/jquery-ui-1.7.1.custom.min.js"></script> 
+    <script type="text/javascript" src="http://www.winona.edu/Scripts/functions.js"></script>
+-->
+    
+
+    <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.1.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="js/respond.js"></script>
+    <![endif]-->
+    <title>OT 7ab - Winona State University ci</title>
+</head>
+<body>
+          <!--alert container start-->
+        <!--alert container end-->    <noscript>
+        <div class="alert alert-danger text-center h4 noindex noscript-warning"><strong>Warning!</strong> Your browser does not support JavaScript, or it has been disabled. Therefore, this site may not work as intended.</div>
+    </noscript>
+
+    <!--[if lt IE 8]>
+         <div class="alert alert-warning text-center h4 noindex old-browser-warning">You're using an <strong>older version</strong> of this browser. For a better user experience <a href="http://browsehappy.com/" class="alert-link">upgrade your browser</a>.</div>
+    <![endif]-->
+    <div class="container wsu-container">
+        <!--top content start-->
+
+
+
+<div class="row" id="topPurple">
+  <!-- working with horizontal roundabout -->
+<style>
+  .rline {border:1px solid red;}
+  .gline {border:1px solid green;}
+  .yline {border:1px solid yellow;}
+  .no-padding {padding:0 !important;}
+</style>
+
+<style>
+   #myContent ul li {display:block;list-style: none; padding: 0; margin:0;}
+   #myContent div {display:none;}/*height:360px;*/
+   #myContent H1 {letter-spacing:-0.3px;color:#00afed ;font:bold 24px/26px Arial, Helvetica, sans-serif;padding-top:65px;padding-bottom:15px;}
+   .myContent-inner h1 {color:#00afed;margin-top:0px;}
+   .myContent-inner img {margin-left:15px;}
+   .round-copy {color: #ffffff;font:normal 12px/16px Arial, Helvetica, sans-serif;padding-bottom:15px;}
+   .round-links {color: #ffffff;font:bold 12px/18px Arial, Helvetica, sans-serif;}
+   .round-links a{color: #ffffff;font:bold 12px/18px Arial, Helvetica, sans-serif;}
+   .round-links a:link{color: #ffffff;font:bold 12px/18px Arial, Helvetica, sans-serif;}
+   .round-links a:hover{color: #cccccc;font:bold 12px/18px Arial, Helvetica, sans-serif;}
+   .roundabout-holder { padding: 0; width:225px; height: 100px; list-style: none; padding: 0; margin:0;margin-left:0px;}
+   .roundabout-moveable-item {height: 80px;width: 106px;cursor: pointer;background-color: #ffc;border: 0px solid #999;padding: 0; margin:0;}
+   .roundabout-in-focus { cursor: auto; border:solid 2px #ffffff; width:102px; height:76px;overflow:hidden;}
+   #myRoundabout a {display:block;height: 80px;width: 106px;} 
+</style> 
+
+
+<script>
+  
+   $(document).ready(function() {
+    
+      $('ul#myRoundabout li').blur(function() {
+        var index = $('ul#myRoundabout li').index(this) + 1;
+        $('.c' + index).css('display','none');
+        $('#r' + index).css('width','106px');
+        $('#r' + index).css('height','80px');
+        $('#r' + index).css('background-position','0px 0px');
+      });
+      $('ul#myRoundabout li').focus(function() {
+        var index = $('ul#myRoundabout li').index(this) + 1;
+        $('.c' + index).css('display','block');
+        $(".myContent-inner").css('display','block');
+        $('#r' + index).css('width','102px');
+        $('#r' + index).css('height','76px');
+        $('#r' + index).css('background-position','-2px -2px');
+      });
+      $('ul#myRoundabout').roundabout({
+        //shape: 'waterWheel',
+        minOpacity: 0.8,
+        minScale: 1.0,
+        maxScale: 1.0,
+        startingChild: 3,
+        btnNext: '#next',
+        btnPrev: '#previous'
+      });
+      
+ 
+   });
+
+</script> 
+<script type="text/javascript">
+// <![CDATA[
+function loadIframe(iframeName, url) {
+    if ( window.frames[iframeName] ) {
+        window.frames[iframeName].location = url;   
+        return false;
+    }
+    return true;
+}
+function changeIframeSrc(id, url) {
+    if (!document.getElementById) return;
+    var el = document.getElementById(id);
+    if (el && el.src) {
+        el.src = url;
+        return false;
+    }
+    return true;
+}
+// ]]>
+</script>
+
+
+<div class="col-md-12" style="padding:0 !important;">
+  <div class="row" style="padding:0 !important;">
+    <div class="col-md-7 col-sm-12" style="">
+      <div class="c1" style="display:none;"><img alt="Somsen phelps main" class="img-responsive" src="../assets/Somsen-Phelps-Main.png" /></div>
+      <div class="c2" style="display:none;"><img alt="Wsu unites cancer survivors main" class="img-responsive" src="../assets/WSU-Unites-Cancer-Survivors-Main.png" /></div>
+      <div class="c3" style="display:none;"><img alt="Business students top rank" class="img-responsive" src="../assets/Business_Students_Top_Rank.png" /></div>
+      <div class="c4" style="display:none;"><img alt="Alkire art main" class="img-responsive" src="../assets/Alkire_Art_Main.png" /></div>
+    </div>
+
+    <div class="col-md-5 col-sm-12" style="height:360px;position:relative;">
+      <div class="col-md-12 " style="">
+
+        <ul id="myContent" class="no-padding" style="">
+        
+          <div class="c1" class="row " style="">
+            <div class=" myContent-inner" style=""> 
+              <h1>Historical Designation Highlights WSU Buildings</h1>
+                <p class="round-copy" style="">Two of the oldest buildings on the Winona State University campus, Somsen Hall and Phelps Hall, have been accepted into the National Register of Historic Places by the Minnesota Historical Society.</p>
+                <p class="round-links" style=""><a href="http://winonastatenews.com/4977/wsu-buildings-named-to-national-register/">Read More</a> <i class="fa fa-chevron-circle-right"></i></p>
+            </div>
+          </div>
+
+          <div class="c2" class="row">
+            <div class=" myContent-inner">  
+              <h1 style="">Supporting Cancer Survivors</h1>
+              <p class="round-copy" style="">WSU will again partner with Gundersen Lutheran and Winona Health to offer &quot;Winona Survivors Unite in Exercise.&quot; The program pairs undergraduate Movement Science students with cancer survivors, helping them gain strength, endurance and flexibility.</p>
+              <p class="round-links" style=""><a href="http://winonastatenews.com/4995/winona-survivors-unite-in-exercise/">Read More</a> <i class="fa fa-chevron-circle-right"></i></p>
+            </div>
+          </div>
+
+          <div class="c3" class="row">
+            <div class=" myContent-inner"> 
+              <h1 style="">Business Students Receive Top Ranking</h1>
+              <p class="round-copy" style="">WSU business administration student teams earned top rankings in the 2013 Marketplace Live Tournament. The tournament provides participants with a realistic experience in managing an entire international firm and the opportunity to gain insight into the…</p>
+              <p class="round-links" style=""><a href="http://winonastatenews.com/4988/business-students-receive-top-rankings/">Read More</a> <i class="fa fa-chevron-circle-right"></i></p>
+            </div>
+          </div>
+
+          <div class="c4" class="row" style="">
+            <div class=" myContent-inner">  
+              <h1 style="">Professor Named Emerging Artist</h1>
+              <p class="round-copy" style="">WSU art instructor Kjellgren Alkire has been named the recipient of the 2013-14 Jerome Foundation Fellowship for Emerging Artists. Alkire is one of five recipients selected by a panel of art professionals.</p>
+              <p class="round-links" style=""><a href="http://winonastatenews.com/5008/alkire-named-emerging-artist/">Read More</a> <i class="fa fa-chevron-circle-right"></i></p>
+            </div>
+          </div>
+
+        </ul>
+
+        <div class="col-md-12 col-sm-4" id="horz-roundabout" style="" >
+          <a style="" href="index2#" id="next"><i class="fa fa-chevron-circle-right" style="color:#ffffff;"></i></a>
+          <ul id="myRoundabout" >
+            <li id="r1" style="background:url(../assets/Somson-Phelps-Thumbnail.png) no-repeat;"><a href="index2#"></a></li>
+            <li id="r2" style="background:url(../assets/WSU-Unite-Survivors-Thumbnail.png) no-repeat;"><a href="http://wsu03-staging.herokuapp.com/#"></a></li>
+            <li id="r3" style="background:url(../assets/Business_Students_Top_Rank_Thumbnail.png) no-repeat;"><a href="index2#"></a></li>
+            <li id="r4" style="background:url(../assets/Alkire_Art_Thumbnail.png) no-repeat;"><a href="index2#"></a></li>
+          </ul> 
+          <a style="" href="index2#" id="previous"><i class="fa fa-chevron-circle-left" style="color:#ffffff;"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+<div class="row">
+  <div class="container wsu-container">
+  <div class="row">
+
+    <div class="navbar navbar-default" id="mid-nav" style="">
+
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+      </div>
+   
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <p class="navbar-text hidden-xs visible-md visible-lg">For information: </p>
+        <ul class="nav navbar-nav ci"><!-- nav-pills -->
+          <li style=""><a href="index2#">Future Students</a></li>
+          <li><a href="index2#">Alumni & Friends</a></li>
+          <li><a href="index2#">Community</a></li>
+          <li><a href="index2#">Current Students</a></li>
+          <li><a href="index2#">Faculty & Staff</a></li>
+        </ul>
+      </div>
+      
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+</div>
+
+<div class="row">
+  
+<div class="container wsu-container tabbox" id="lower-wrapper" style="">
+
+<ul class="nav nav-tabs ci" id="myTab">
+  <li class="active"><a class="lower-tabs" href="index2#spotlight" data-toggle="tab">Spotlight</a></li>
+  <li><a class="lower-tabs" href="index2#news" data-toggle="tab">News</a></li>
+  <li><a class="lower-tabs" href="index2#events" data-toggle="tab">Events Calendar</a></li>
+</ul>
+
+<div class="tab-content" id="lower-nav" style="background-color:#ffffff;"><!-- margin-left:-15px;margin-right:-15px; min-height:300px; -->
+  
+  <!-- SPOTLIGHT -->
+  <div class="tab-pane active" id="spotlight">
+    <div class="container" style="" id="lower-nav">
+      <div class="row" style="padding-top:10px;">
+
+        <div class="col-md-4" >
+          <div class="col-12-md buckets">
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="steel">Snowshoe Showdown</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5 col-sm-3 col-xs-4">
+                <img alt="Oerc small" class="img-responsive" src="../assets/OERC_small.png" />
+              </div>
+              <div class="col-md-7 col-sm-9 col-xs-8 no-padding-left">
+                <p>Join the Outdoor Education &amp; Recreation Center for snowshoeing, live music and prizes Feb. 9!</p>
+                <button class="btn btn-primary btn-sm btn-steel" >Read More  <i class="fa fa-chevron-circle-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" >
+          <div class="col-12-md buckets">
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="orange">Transfer to WSU</h3>
+              </div>
+            </div> 
+            <div class="row">
+              <div class="col-md-5 col-sm-3 col-xs-4">
+                <img alt="Wsu 2011 smiling student 2 small" class="img-responsive" src="../assets/WSU-2011-Smiling-Student-2-Small.png" />
+              </div>
+              <div class="col-md-7 col-sm-9 col-xs-8 no-padding-left">
+                <p>Academics. Technology. Sustainability. Health and wellness. Civic engagement. This is your opportunity to discover what matters.</p>
+                <button class="btn btn-primary btn-sm btn-orange">Check it out  <i class="fa fa-chevron-circle-right"></i></button>
+              </div>
+            </div>   
+          </div>
+        </div>
+
+        <div class="col-md-4" >
+          <div class="col-12-md buckets">
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="green">Dancescape 2014</h3>
+              </div>
+            </div> 
+            <div class="row">
+              <div class="col-md-5 col-sm-3 col-xs-4">
+                <img alt="Dancescape small" class="img-responsive" src="../assets/dancescape_small.png" />
+              </div>
+              <div class="col-md-7 col-sm-9 col-xs-8 no-padding-left">
+                <p>Get your tickets for the 2014 Dancescape. Opening night is Feb. 13.</p>
+            <button class="btn btn-primary btn-sm btn-green">Learn More <i class="fa fa-chevron-circle-right"></i></button>
+              </div>
+            </div>   
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- NEWS -->
+  <div class="tab-pane" id="news">
+    <div class="container" style="" id="lower-nav">
+      <div class="row" style="padding-top:10px;"><!-- padding:20px 50px 0 50px; -->
+
+        <div class="col-md-4" >
+          <div class="col-12-md buckets">
+            <h3 class="orange">Regional Emmy-Winner to Visit WSU</h3>
+            <p class="full">Winona State University will host a talk with Regional Emmy-Winning Filmmaker and WSU graduate Olga Lezhepekova at 4 p.m. Monday, Feb. 10, in Somsen ...</p>
+            <button class="btn btn-primary btn-sm btn-orange" >Read More  <i class="fa fa-chevron-circle-right"></i></button>
+          </div>
+        </div>
+
+        <div class="col-md-4" >
+          <div class="col-12-md buckets">
+            <h3 class="steel">CLASP: “Comparative Student Activism”</h3>
+            <p class="full">The Winona State University CLASP lecture series will host Professor Edward Guernica of the political science department for the presentation ...</p>
+            <button class="btn btn-primary btn-sm btn-steel">Check it out  <i class="fa fa-chevron-circle-right"></i></button>
+          </div>
+        </div>
+
+        <div class="col-md-4" >
+          <div class="col-12-md buckets">
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="green">Land Of Education</h3>
+              </div>
+            </div> 
+            <div class="row">
+              <div class="col-md-5 col-sm-3 col-xs-4">
+                <img alt="2010 athenaeum small button(1)" class="img-responsive" src="../assets/2010_Athenaeum_Small_button(1).PNG" />
+              </div>
+              <div class="col-md-7 col-sm-9 col-xs-8 no-padding-left">
+                <p>Join Professor Bruno Borsari and learn how WSU's campus can become a powerful tool for education Feb. 12.</p>
+                <button class="btn btn-primary btn-sm btn-green">Learn More <i class="fa fa-chevron-circle-right"></i></button>
+              </div>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="tab-pane" id="events">
+
+  <div class="container" style="" id="lower-nav">
+    <div class="row" style="padding-top:10px;">
+      <div class="col-md-8" >
+        <div class="col-12-md buckets">
+          <div class="row">
+          <div class="col-md-6">
+            <div class="row bucket-event">
+              <div class="col-md-2 col-sm-1  col-xs-2 date"><a href="index2#">Feb<br /><span>15</span><br />2014</a></div>
+              <div class="col-md-10 col-sm-11 col-xs-10"><a href="index2#">"Student Civic Movements in Comparative Context" (2/12/2014)</a></div>
+            </div>
+            <div class="row bucket-event">
+              <div class="col-md-2 col-sm-1 col-xs-2 date"><a href="index2#">Feb<br /><span>15</span><br />2014</a></div>
+              <div class="col-md-10 col-sm-11 col-xs-10"><a href="index2#">Sustainable Living at WSU (2/12/2014)</a></div>
+            </div>
+            <div class="row bucket-event" style="border:none;">
+              <div class="col-md-2 col-sm-1 col-xs-2 date"><a href="index2#">Feb<br /><span>15</span><br />2014</a></div>
+              <div class="col-md-10 col-sm-11 col-xs-10"><a href="index2#">WSU International Students (2/13/2014)</a></div>
+            </div>
+
+          </div>
+          <div class="col-md-6">
+            <div class="row bucket-event">
+              <div class="col-md-2 col-sm-1 col-xs-2  date"><a href="index2#">Feb<br /><span>15</span><br />2014</a></div>
+              <div class="col-md-10 col-sm-11 col-xs-10"><a href="index2#">Composite Materials Engineering Open House (2/15/2014)</a></div>
+            </div>
+            <div class="row bucket-event">
+              <div class="col-md-2 col-sm-1 col-xs-2 date"><a href="index2#">Feb<br /><span>15</span><br />2014</a></div>
+              <div class="col-md-10 col-sm-11 col-xs-10"><a href="index2#">Common Book: Barry Estabrook (2/17/2014)</a></div>
+            </div>
+            <div class="row bucket-event" style="border:none;">
+              <div class="col-md-2 col-sm-1  col-xs-2 date"><a href="index2#">Feb<br /><span>15</span><br />2014</a></div>
+              <div class="col-md-10 col-sm-11 col-xs-10"><a href="index2#">WSU Ducks Unlimited 6th Annual Sportsman's Night Out (2/21/2014)</a></div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="col-md-4" >
+        <div class="col-12-md buckets">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="steel" style="border-bottom:1px dotted #cdcdcd;">Pump Up The Jams!</h3>
+            </div>
+          </div> 
+          <div class="row">
+            <div class="col-md-5 col-sm-3 col-xs-4">
+              <img alt="2012 music dept small button" class="img-responsive" src="../assets/2012_Music_Dept_small_button.png" />
+            </div>
+            <div class="col-md-7 col-sm-9 col-xs-8 no-padding-left">
+              <p>Don't miss this year's spring concert with featured artist Timeflies! Public tickets available March 1.</p>
+          <button class="btn btn-primary btn-sm btn-steel">View all events <i class="fa fa-chevron-circle-right"></i></button>
+            </div>
+          </div>   
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+        <!--[top content end]-->
+    </div>
+    <!--tab controller container start [bottom content]-->
+    <!--tab controller container end [bottom content]-->
+    <!--footer container start-->
+  <div id="wsu-footer" class="row">
+    <div class="container wsu-container-footer">
+        <div class="col-md-3 col-sm-4">
+            <h3><a href="http://www.winona.edu/admissions">Future Students</a></h3>
+            <p>
+                <a href="http://www.winona.edu/admissions/apply.asp">Apply</a><br>
+                <a href="http://www.winona.edu/admissions/visit.asp">Schedule a Visit</a><br>
+                <a href="http://www.winona.edu/financialaid/futurestudents.asp">Learn about financial aid</a><br>
+                <a href="http://winona.askadmissions.net/emtinterestpage.aspx?ip=request">Request information</a>
+            </p>
+        </div>
+        <div class="col-md-3 col-sm-4">
+            <h3><a href="http://www.winona.edu/community.asp">Winona State Alumni</a></h3>
+            <p>
+                <a href="http://www.winona.edu/registrar/transcriptsrequests.asp">Request a transcript</a><br>
+                <a href="http://www.winona.edu/career/alumni.asp">Connect with career services</a><br>
+                <a href="http://wsucurrents.wordpress.com/">Read <em>Currents</em> magazine</a><br>
+                <a href="http://www.alumni.winona.edu/netcommunity/page.aspx?pid=241">Learn about alumni events</a>
+            </p>
+        </div>
+        <div class="col-md-3 col-sm-4">
+            <h3><a href="http://www.winona.edu/community.asp">Community Members</a></h3>
+            <p>
+                <a href="https://w3.winona.edu/events">Attend an event</a><br>
+                <a href="http://www.winona.edu/facilities/roomreservations.asp">Reserve facilities</a><br>
+                <a href="http://winona.augusoft.net/index.cfm?fuseaction=1010">Take a non-credit class</a><br>
+                <a href="http://www.winona.edu/affirmaction/employment.asp">Employment opportunities</a>
+            </p>
+        </div>
+        <div id="sm4" class="col-md-3 col-sm-12">
+            <p>
+                <a href="https://winona.custhelp.com/">
+                    <img class="smicon" alt="Ask a question" src="http://www.winona.edu/images/icon-ask.png"></a><a class="smlink" href="https://winona.custhelp.com/">Ask a Question</a>
+            </p>
+            <p>
+                <a href="http://www.winona.edu/foundation">
+                    <img class="smicon" alt="Make a gift" src="http://www.winona.edu/images/icon-makeagift.png"></a><a class="smlink" href="http://xwebdev.winona.edu/foundation">Make a Gift</a>
+            </p>
+            <p>
+                <a href="http://www.winona.edu/socialmedia.asp">
+                    <img class="smicon" alt="Go to WSU Social Media" src="http://www.winona.edu/images/icon-socialmedia.png"></a><a class="smlink" href="http://xwebdev.winona.edu/socialmedia.asp">WSU Social Media</a>
+            </p>
+            <p>
+                <a href="https://mywsu.winona.edu/">
+                    <img class="smicon" alt="Go to WSU eHome" src="http://www.winona.edu/images/icon-ehome.png"></a><a class="smlink" href="https://mywsu.winona.edu/">WSU eHome</a>
+            </p>
+        </div>
+    </div>
+</div>
+<div id="wsu-footer-global" class="row"  style="display:none;">
+    <div class="container wsu-container-footer-global">
+        <div class="col-md-2 col-sm-1">
+            <a href="http://www.winona.edu/">
+                <img src="http://www.winona.edu/brandimages/logo_graphic.png" alt="WSU" title="WSU">
+            </a>
+            <div id="wsu-social-foot" class="wsu-social pull-right visible-xs">
+                <a target="_blank" href="http://www.facebook.com/WinonaStateU">
+                    <img alt="Visit WSU on Facebook" src="http://www.winona.edu/images/smicon-fb.png">
+                </a>
+                <a target="_blank" href="http://www.winonastateu.com/">
+                    <img alt="Visit the WSU Blog" src="http://www.winona.edu/images/smicon-wp.png">
+                </a>
+                <a target="_blank" href="http://www.youtube.com/WinonaU">
+                    <img alt="Go to WSU on YouTube" src="http://www.winona.edu/images/smicon-yt.png">
+                </a>
+                <a target="_blank" href="https://twitter.com/winonastate">
+                    <img alt="@winonastate" src="http://www.winona.edu/images/smicon-tt.png">
+                </a>
+            </div>
+        </div>
+        <footer class="col-md-10 col-sm-11" role="contentinfo">
+            <address>
+                <a href="http://www.winona.edu">Winona State University</a> | P.O. Box 5838 | 175 West Mark Street | Winona, MN 55987 | <a href="tel:5074575000">507.457.5000</a> | <a href="tel:18003425978">1.800.342.5978</a><br>
+                The oldest member of the <a href="http://www.mnscu.edu/">Minnesota State Colleges and Universities System</a> | <a href="http://www.winona.edu/disclaimer.asp">Privacy</a> | <a href="mailto:webmaster@winona.edu">webmaster@winona.edu</a>
+            </address>
+        </footer>
+    </div>
+</div>
+
+    <!--footer container end-->
+
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> <!-- from 1.10.2 to 1.7.2 -->
+
+      <script type="text/javascript" src="http://wsu03-staging.herokuapp.com/pages/jquery/jquery-1.4.2.js"></script>
+        
+
+
+      <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+      <script src="http://xwebdev.winona.edu/webteam/zach/wsu.mainweb.templates/js/site.js"></script>
+
+      <!-- loading old version of FredHQ roundabout - see index2 -loaded with 2.4.2 -->
+      <script type="text/javascript" src="http://www.winona.edu/scripts/jquery.roundabout.min.js"></script>
+      <script type="text/javascript" src="http://www.winona.edu/scripts/jquery.roundabout-shapes.min.js"></script>
+
+</body>
+</html>
+
